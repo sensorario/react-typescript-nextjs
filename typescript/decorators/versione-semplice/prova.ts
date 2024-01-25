@@ -1,17 +1,12 @@
-function decoratore() {
+function decoratore(options) {
+  console.log(options)
   return function (target : any, key : string, descriptor: PropertyDescriptor) {
     console.log(`dentro al decorator decoratore`)
     return descriptor.value.apply(this, arguments)
   }
 }
 
-function cose (target : any, key : string, descriptor: PropertyDescriptor) {
-  console.log(`dentro al decorator cose`)
-  return descriptor.value.apply(this, arguments)
-}
-
 class Foo {
-  @decoratore()
-  @cose
+  @decoratore({op: "zioni"})
   funzione () { console.log(`dentro alla funzione`); }
 }
