@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 export default function UnComponente({ ...props }) {
-    const [valore, setValore] = useState(null)
+    const [valore, setValore] = useState(0)
 
     return (
         <button onClick={() => {
