@@ -1,6 +1,7 @@
 import './App.css';
 import { Button, Container, Grid, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import HomeIcon from '@mui/icons-material'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -13,6 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function App() {
   return (
     <Container>
+      <HomeIcon />
       <br />
       <Button variant='contained' color='primary'>bottone di Material</Button>
       <button>bottone normale</button>
