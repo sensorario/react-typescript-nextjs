@@ -1,0 +1,5 @@
+.main-layout, .rotta-container {
+  padding: 20px;
+  border: #ccc 8px dashed;
+  border-radius: 8px;
+}
