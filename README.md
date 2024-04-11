@@ -1,4 +1,4 @@
-# React, TypeScript and NextJs
+# React, TypeScript and NextJs 3.0
 
 In questo repository puoi trovare buona parte del codice in cui si parla del libro [React, TypeScript and NextJs](https://amzn.to/4aTmBWZ). In particolare in questo branch puoi trovare il codice che fa riferimento alla terza edizione del libro.
 
