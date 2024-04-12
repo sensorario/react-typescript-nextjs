@@ -4,7 +4,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 
 ## Aggiunte
 
-- [React] useTransition()
-- [Next] ./app/not-found.tsx
+- [React] [useTransition()](/react/useTransition)
+- [Next] [./app/not-found.tsx](/next.js/page-not-found)
 
 ...
