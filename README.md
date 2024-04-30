@@ -6,5 +6,6 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 
 - [React] [useTransition()](/react/useTransition)
 - [Next] [./app/not-found.tsx](/next.js/page-not-found)
+- [TypeScript] [generics](/typescript/generics)
 
 ...
