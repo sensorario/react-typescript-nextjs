@@ -5,6 +5,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 ## Aggiunte
 
 - [React] [useTransition()](/react/useTransition)
+- [React] [&lt;Profiler /&gt;](/react/react-profiler)
 - [Next] [./app/not-found.tsx](/next.js/page-not-found)
 - [TypeScript] [generics](/typescript/generics)
 
