@@ -21,6 +21,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 ### Next.js
 
 - [Next] [./app/not-found.tsx](/next.js/page-not-found)
+- [Next] [linking & navigating](/next.js/linking-and-navigating)
 
 ### TypeScript
 
