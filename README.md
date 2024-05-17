@@ -26,3 +26,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 ### TypeScript
 
 - [TypeScript] [generics](/typescript/generics)
+
+### Design System
+
+- [Design System] [icons](/design-system/icons)
