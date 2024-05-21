@@ -17,6 +17,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 - [React] [useContext()](/react/use-context)
 - [React] [&lt;Profiler /&gt;](/react/react-profiler)
 - [React] [use()](/react/use)
+- [React] [attributo key](/react/key-attrbute)
 
 ### Next.js
 
