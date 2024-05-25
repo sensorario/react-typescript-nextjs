@@ -25,6 +25,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 - [Next] [page not found](/next.js/page-not-found)
 - [Next] [linking & navigating](/next.js/linking-and-navigating)
 - [Next] [dynamic routes](/next.js/dynamic-routes)
+- [Next] [middlewares](/next.js/middlewares)
 
 ### TypeScript
 
