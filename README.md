@@ -13,12 +13,13 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 
 ### React
 
-- [React] [useTransition()](/react/useTransition)
-- [React] [useFormStatus()](/react/useFormStatus)
-- [React] [useContext()](/react/use-context)
+- [React] [altri hook](/react/altri-hook)
+- [React] [key-attribute](/react/key-attribute)
 - [React] [&lt;Profiler /&gt;](/react/react-profiler)
 - [React] [use()](/react/use)
-- [React] [attributo key](/react/key-attrbute)
+- [React] [useContext()](/react/use-context)
+- [React] [useFormStatus()](/react/useFormStatus)
+- [React] [useTransition()](/react/useTransition)
 
 ### Next.js
 
