@@ -29,7 +29,11 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 
 ### TypeScript
 
+- [TypeScript] [build](/typescript/build)
+- [TypeScript] [decorators](/typescript/decorators)
 - [TypeScript] [generics](/typescript/generics)
+- [TypeScript] [moduli](/typescript/moduli)
+- [TypeScript] [moduli-javascript](/typescript/moduli-javascript)
 
 ### Design System
 
