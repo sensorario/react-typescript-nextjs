@@ -23,10 +23,18 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 
 ### Next.js
 
-- [Next] [page not found](/next.js/page-not-found)
-- [Next] [linking & navigating](/next.js/linking-and-navigating)
+- [Next] [catch all segment](/next.js/catch-all-segment)
+- [Next] [correggere l'errore](/next.js/correggere-l-errore)
 - [Next] [dynamic routes](/next.js/dynamic-routes)
+- [Next] [error boundary](/next.js/error-boundary)
+- [Next] [installazione](/next.js/installazione)
+- [Next] [linking and navigating](/next.js/linking-and-navigating)
+- [Next] [loading ui and streaming](/next.js/loading-ui-and-streaming)
 - [Next] [middlewares](/next.js/middlewares)
+- [Next] [page not found](/next.js/page-not-found)
+- [Next] [parallel-routes](/next.js/parallel-routes)
+- [Next] [route-groups](/next.js/route-groups)
+- [Next] [server-actions](/next.js/server-actions)
 
 ### TypeScript
 
@@ -39,3 +47,4 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 ### Design System
 
 - [Design System] [icons](/design-system/icons)
+- [Design System] [griglia bottoni](/design-system/griglia-bottoni)
