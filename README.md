@@ -20,6 +20,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 - [React] [useContext()](/react/use-context)
 - [React] [useFormStatus()](/react/useFormStatus)
 - [React] [useTransition()](/react/useTransition)
+- [React] [useOptimistic()](/react/useOptimistic)
 
 ### Next.js
 
