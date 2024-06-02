@@ -35,7 +35,7 @@ function Library({
       {optimisticContent.map((book: Book, index: number) => (
         <div key={index}>
           {book.text}
-          {!!book.sending && <small> (Sending...)</small>}
+          {!!book.sending && <small>(Sending...)</small>}
         </div>
       ))}
 
