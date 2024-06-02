@@ -1,30 +1,30 @@
 import { useOptimistic, useState } from "react";
 
-const createNewBook = async (message: FormDataEntryValue | null) => {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  return message + " content from rest api";
+const createNewBook = async (book: FormDataEntryValue | null) => {
+  await new Promise((resolve) => setTimeout(resolve, 4000));
+  return book;
 };
 
-type Book = { text: string; sending: boolean; key?: number };
+type Book = { text: string; sending: boolean };
 
 function Library({
-  books: messages,
-  createBook: sendMessage,
+  books: books,
+  createBook: sendBook,
 }: {
   books: Book[];
   createBook: (formData: FormData) => void;
 }) {
   async function formAction(formData: FormData) {
-    addContent(String(formData.get("message")));
-    await sendMessage(formData);
+    addContent(String(formData.get("book")));
+    await sendBook(formData);
   }
 
   const [optimisticContent, addContent] = useOptimistic(
-    messages,
-    (state: Book[], newMessage: string) => [
+    books,
+    (state: Book[], newBook: string) => [
       ...state,
       {
-        text: newMessage,
+        text: newBook,
         sending: true,
       },
     ]
@@ -32,17 +32,15 @@ function Library({
 
   return (
     <>
-      {optimisticContent.map(
-        (message: { text: string; sending: boolean }, index: number) => (
-          <div key={index}>
-            {message.text}
-            {!!message.sending && <small> (Sending...)</small>}
-          </div>
-        )
-      )}
+      {optimisticContent.map((book: Book, index: number) => (
+        <div key={index}>
+          {book.text}
+          {!!book.sending && <small> (Sending...)</small>}
+        </div>
+      ))}
 
       <form action={formAction}>
-        <input type="text" name="message" placeholder="Hello!" />
+        <input type="text" name="book" placeholder="Hello!" />
         <button type="submit">Send</button>
       </form>
     </>
@@ -51,14 +49,14 @@ function Library({
 
 export default function App() {
   const [books, setBooks] = useState<Book[]>([
-    { text: "React", sending: false, key: 1 },
-    { text: "React, TypeScript e Next.js", sending: false, key: 3 },
+    { text: "React", sending: false },
+    { text: "React, TypeScript e Next.js", sending: false },
   ]);
 
-  async function sendMessage(formData: FormData) {
-    const sentMessage = await createNewBook(formData.get("message"));
-    setBooks((messages: any) => [...messages, { text: sentMessage }]);
+  async function sendBook(formData: FormData) {
+    const sentBook = await createNewBook(formData.get("book"));
+    setBooks((books: any) => [...books, { text: sentBook }]);
   }
 
-  return <Library books={books} createBook={sendMessage} />;
+  return <Library books={books} createBook={sendBook} />;
 }
