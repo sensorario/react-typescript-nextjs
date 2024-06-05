@@ -1,4 +1,4 @@
-# Linking and Navigating
+# React profiler
 
 - [torna alla home](/)
 
