@@ -2,8 +2,7 @@
 
 import { useActionState } from "react";
 
-async function fn(prevState: number) {
-  "use server";
+async function fn(prevState: number, dati: FormData) {
   return prevState + 1;
 }
 
@@ -12,10 +11,9 @@ export function Componente() {
 
   return (
     <>
-      <h1>useActionState()</h1>
       <div>{state}</div>
       <form action={formAction}>
-        <button onClick={formAction}>submit</button>
+        <button>submit</button>
       </form>
     </>
   );
