@@ -1,4 +1,5 @@
 import { useState, useTransition } from "react";
+import "sensorario-design-system/style/index.css";
 
 function Container() {
   const [page, setPage] = useState("/");
@@ -45,10 +46,10 @@ function Container() {
 
 function App() {
   return (
-    <>
-      <h1>useTransaction()</h1>
+    <div className="sensorario-container">
+      <h1>useTransition()</h1>
       <Container />
-    </>
+    </div>
   );
 }
 
@@ -61,9 +62,9 @@ function HomePage() {
   delay(0.6);
 
   return (
-    <>
+    <div className="sensorario-container">
       <h2>Homepage</h2>
-    </>
+    </div>
   );
 }
 
@@ -71,9 +72,9 @@ function BlogPage() {
   delay(0.5);
 
   return (
-    <>
+    <div className="sensorario-container">
       <h2>Blog!</h2>
-    </>
+    </div>
   );
 }
 
