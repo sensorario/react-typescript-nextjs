@@ -17,7 +17,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 - [React] [key-attribute](/react/key-attribute)
 - [React] [&lt;Profiler /&gt;](/react/react-profiler)
 - [React] [use()](/react/use)
-- [React] [useContext()](/react/use-context)
+- [React] [useContext()](/react/useContext)
 - [React] [useFormStatus()](/react/useFormStatus)
 - [React] [useTransition()](/react/useTransition)
 - [React] [useOptimistic()](/react/useOptimistic)

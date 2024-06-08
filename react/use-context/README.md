@@ -1,6 +1,0 @@
-# useContext()
-
-```
-yarn
-yarn start
-```
