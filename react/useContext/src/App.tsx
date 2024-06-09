@@ -18,17 +18,17 @@ const useScambiatoreDiTemi = (): [string, () => void] => {
 export const Conoscenza = createContext("light");
 
 function Giovanni() {
-  const [tema, inverti] = useScambiatoreDiTemi();
+  const [theme, inverti] = useScambiatoreDiTemi();
 
   return (
-    <div className="sensorario-container">
-      <h1>useContext()</h1>
-      <Conoscenza.Provider value={String(tema)}>
+    <Conoscenza.Provider value={String(theme)}>
+      <div className={`sensorario-container ${theme}`}>
+        <h1>useContext()</h1>
         <Gabriele />
         <br />
         <button onClick={inverti}>toggle</button>
-      </Conoscenza.Provider>
-    </div>
+      </div>
+    </Conoscenza.Provider>
   );
 }
 
