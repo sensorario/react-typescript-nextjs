@@ -25,6 +25,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 - [React] [useState()](/react/useState)
 - [React] [useReducer()](/react/useReducer)
 - [React] [useRef()](/react/useRef)
+- [React] [useEffect()](/react/useEffect)
 
 ### Next.js
 
