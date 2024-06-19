@@ -1,4 +1,4 @@
-# useEffect()
+# useMemo()
 
 - [torna alla home](/)
 
