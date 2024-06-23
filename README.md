@@ -28,6 +28,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 - [React] [useEffect()](/react/useEffect)
 - [React] [useMemo()](/react/useMemo)
 - [React] [useCallback()](/react/useCallback)
+- [React] [useId()](/react/useId)
 
 ### Next.js
 
