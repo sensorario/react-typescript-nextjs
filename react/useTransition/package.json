@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.0.0-rc-cc1ec60d0d-20240607",
-    "react-dom": "^19.0.0-rc-cc1ec60d0d-20240607",
-    "sensorario-design-system": "^1.0.11"
+    "react": "^19.0.0-rc-c21bcd627b-20240624",
+    "react-dom": "^19.0.0-rc-c21bcd627b-20240624",
+    "sensorario-design-system": "github:sensorario/sensorario-design-system#main"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

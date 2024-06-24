@@ -1,7 +1,37 @@
 import { useState, useTransition } from "react";
 import "sensorario-design-system/style/index.css";
 
-function Container() {
+function delay(sec: number) {
+  let startTime = performance.now();
+  while (performance.now() - startTime < sec * 1000) {}
+}
+
+const Home = () => {
+  delay(0.6);
+
+  return (
+    <div className="componente-home">
+      <h1>Homepage</h1>
+    </div>
+  );
+};
+
+const Blog = () => {
+  delay(1);
+
+  return (
+    <div className="componente-home">
+      <h1>Il mio blog</h1>
+      <ul>
+        <li>Post #1</li>
+        <li>Post #2</li>
+        <li>Post #3</li>
+      </ul>
+    </div>
+  );
+};
+
+function App() {
   const [page, setPage] = useState("/");
   const [isPending, startTransition] = useTransition();
 
@@ -11,69 +41,23 @@ function Container() {
     });
   }
 
-  const renderMenu = () => {
-    return (
-      <div className="menu">
-        <button onClick={() => navigate("/")}>home</button>
-        <button onClick={() => navigate("/blog")}>blog</button>
-      </div>
-    );
-  };
-
-  const renderLoading = () => {
-    return (
-      <>
-        {renderMenu()}
-        <div className="loading">loading ...</div>
-      </>
-    );
-  };
-
-  const renderPage = (page: string) => {
-    if (page == "/") return <HomePage />;
-    if (page == "/blog") return <BlogPage />;
-  };
-
-  if (isPending) return renderLoading();
-
   return (
-    <>
-      {renderMenu()}
-      {renderPage(page)}
-    </>
-  );
-}
-
-function App() {
-  return (
-    <div className="sensorario-container">
+    <div className="sensorario-container light">
       <h1>useTransition()</h1>
-      <Container />
-    </div>
-  );
-}
-
-function delay(sec: number) {
-  let startTime = performance.now();
-  while (performance.now() - startTime < sec * 1000) {}
-}
-
-function HomePage() {
-  delay(0.6);
-
-  return (
-    <div className="sensorario-container">
-      <h2>Homepage</h2>
-    </div>
-  );
-}
-
-function BlogPage() {
-  delay(0.5);
-
-  return (
-    <div className="sensorario-container">
-      <h2>Blog!</h2>
+      <div className="button-menu">
+        <div className="pagina-corrente">pagina corrente: {page}</div>
+        <button disabled={isPending} onClick={() => navigate("/")}>
+          home
+        </button>
+        <button disabled={isPending} onClick={() => navigate("/blog")}>
+          blog
+        </button>
+        <div className="pagina">
+          {isPending && "loading ..."}
+          {page === "/" && <Home />}
+          {page === "/blog" && <Blog />}
+        </div>
+      </div>
     </div>
   );
 }
