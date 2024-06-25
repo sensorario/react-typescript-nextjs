@@ -60,6 +60,7 @@ _Qui di seguito ci sono solo le novità e gli aggiornamenti successivi alla pubb
 
 - [Design System] [icons](/design-system/icons)
 - [Design System] [griglia bottoni](/design-system/griglia-bottoni)
+- [Design System] [react icons](/design-system/react-icons)
 
 ### JavaScript
 
