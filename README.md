@@ -63,6 +63,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 ### State Management
 
 - [State Management] [useState](/state-management/use-state)
+- [State Management] [lifting state up](/state-management/lifting-state-up)
 
 ### JavaScript
 
