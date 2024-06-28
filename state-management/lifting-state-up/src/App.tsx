@@ -2,7 +2,6 @@ import { useState } from "react";
 
 type Props = {
   title: string;
-  children: string;
   isActive: boolean;
   onActivation: () => void;
 };
