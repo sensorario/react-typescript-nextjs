@@ -51,8 +51,8 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [TypeScript] [build](/typescript/build)
 - [TypeScript] [decorators](/typescript/decorators)
 - [TypeScript] [generics](/typescript/generics)
+- [TypeScript] [import](/typescript/import)
 - [TypeScript] [moduli](/typescript/moduli)
-- [TypeScript] [moduli-javascript](/typescript/moduli-javascript)
 
 ### Design System
 
@@ -68,4 +68,5 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 
 ### JavaScript
 
+- [JavaScript] [moduli-javascript](/javascript/moduli)
 - [JavaScript] [temporizzazione](/javascript/temporizzazione)
