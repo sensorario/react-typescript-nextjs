@@ -67,6 +67,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [State Management] [reset or preserve](/state-management/reset-or-preserve)
 - [State Management] [rendering list](/state-management/rendering-list)
 - [State Management] [zustand](/state-management/zustand)
+- [State Management] [zustand no store actions](/state-management/zustand-no-store-actions)
 
 ### JavaScript
 
