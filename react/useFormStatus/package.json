@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^19.0.0-rc-935180c7e0-20240524",
-    "react-dom": "^19.0.0-rc-935180c7e0-20240524"
+    "react-dom": "^19.0.0-rc-935180c7e0-20240524",
+    "sensorario-design-system": "github:sensorario/sensorario-design-system#next"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

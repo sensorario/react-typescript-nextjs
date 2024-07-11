@@ -1,6 +1,4 @@
-import "./App.css";
-
-// @ts-ignore
+// @ts-expect-error the error will not appear after react 19 release
 import { useFormStatus } from "react-dom";
 
 const Componente = () => {
@@ -18,12 +16,12 @@ const action = async () => {
 
 function App() {
   return (
-    <>
+    <div className="sensorario-container light">
       <h2>useFormStatus()</h2>
       <form action={action}>
         <Componente />
       </form>
-    </>
+    </div>
   );
 }
 
