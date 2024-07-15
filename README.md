@@ -9,9 +9,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 
 ## Esempi per categoria/capitolo
 
-<table style="width: 100%">
-    <tr>
-    <td valign="baseline" width="50%">
+<table style="width: 100%"><tr><td valign="baseline" width="50%">
 
 ### React
 
@@ -19,6 +17,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [React] [key-attribute](/react/key-attribute)
 - [React] [&lt;Profiler /&gt;](/react/react-profiler)
 - [React] [use()](/react/use)
+- [React] [props.children](/react/props.children/)
 
 #### Hooks
 
@@ -34,8 +33,8 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [React] [useMemo()](/react/useMemo)
 - [React] [useCallback()](/react/useCallback)
 - [React] [useId()](/react/useId)
-</td>
-        <td valign="baseline">
+
+</td><td valign="baseline">
 
 ### Next.js
 
@@ -50,11 +49,9 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [Next] [page not found](/next.js/page-not-found)
 - [Next] [parallel-routes](/next.js/parallel-routes)
 - [Next] [route-groups](/next.js/route-groups)
-- [Next] [server-actions](/next.js/server-actions)</td>
-</tr>
-    <tr>
-        <td valign="baseline" width="50%">
-<img width="441" height="1">
+- [Next] [server-actions](/next.js/server-actions)
+
+</td></tr><tr><td valign="baseline" width="50%"><img width="441" height="1">
 
 ### JavaScript
 
@@ -86,6 +83,6 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [State Management] [rendering list](/state-management/rendering-list)
 - [State Management] [zustand](/state-management/zustand)
 - [State Management] [zustand no store actions](/state-management/zustand-no-store-actions)
-- [State Management] [zustand immer](/state-management/zustand-immer)</td>
-</tr>
-</table>
+- [State Management] [zustand immer](/state-management/zustand-immer)
+
+</td></tr></table>
