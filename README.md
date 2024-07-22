@@ -33,6 +33,7 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [React] [useMemo()](/react/useMemo)
 - [React] [useCallback()](/react/useCallback)
 - [React] [useId()](/react/useId)
+- [React] [useSyncExternalStore()](/react/useSyncExternalStore)
 
 </td><td valign="baseline">
 
