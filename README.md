@@ -85,5 +85,6 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 - [State Management] [zustand](/state-management/zustand)
 - [State Management] [zustand no store actions](/state-management/zustand-no-store-actions)
 - [State Management] [zustand immer](/state-management/zustand-immer)
+- [State Management] [zustand fetch](/state-management/zustand-fetcg)
 
 </td></tr></table>
