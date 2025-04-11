@@ -1,62 +1,30 @@
-import { useOptimistic, useState } from "react";
 
-const createNewBook = async (book: FormDataEntryValue | null) => {
-  await new Promise((resolve) => setTimeout(resolve, 4000));
-  return book;
-};
+import './App.css'
+import "sensorario-design-system/style/index.css";
+import Library from './Library';
+import { createNewBook } from '../api/createNewBook';
+import { useState } from 'react';
+import { Book } from './Book';
 
-type Book = { text: string; sending: boolean };
-
-function Library({
-  books: books,
-  createBook: sendBook,
-}: {
-  books: Book[];
-  createBook: (formData: FormData) => void;
-}) {
-  async function formAction(formData: FormData) {
-    addContent(String(formData.get("book")));
-    await sendBook(formData);
-  }
-
-  const [optimisticContent, addContent] = useOptimistic(
-    books,
-    (state: Book[], newBook: string) => [
-      ...state,
-      {
-        text: newBook,
-        sending: true,
-      },
-    ]
-  );
-
-  return (
-    <>
-      {optimisticContent.map((book: Book, index: number) => (
-        <div key={index}>
-          {book.text}
-          {!!book.sending && <small>(Sending...)</small>}
-        </div>
-      ))}
-
-      <form action={formAction}>
-        <input type="text" name="book" placeholder="Hello!" />
-        <button type="submit">Send</button>
-      </form>
-    </>
-  );
-}
-
-export default function App() {
+function App() {
   const [books, setBooks] = useState<Book[]>([
-    { text: "React", sending: false },
-    { text: "React, TypeScript e Next.js", sending: false },
+    { title: "React", sending: false },
+    { title: "React, TypeScript e Next.js", sending: false },
   ]);
 
   async function sendBook(formData: FormData) {
-    const sentBook = await createNewBook(formData.get("book"));
-    setBooks((books: any) => [...books, { text: sentBook }]);
+    const book = formData.get("book");
+
+    const sentBook = await createNewBook(book as string);
+    setBooks((books: Book[]) => [...books, { title: sentBook, sending: false }]);
   }
 
-  return <Library books={books} createBook={sendBook} />;
+  return (
+    <div className="sensorario-container light">
+      <h1>useOptimistic()</h1>
+      <Library books={books} sendBook={sendBook} />;
+    </div>
+  )
 }
+
+export default App
