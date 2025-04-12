@@ -14,7 +14,6 @@ function App() {
 
   async function sendBook(formData: FormData) {
     const book = formData.get("book");
-
     const sentBook = await createNewBook(book as string);
     setBooks((books: Book[]) => [...books, { title: sentBook, sending: false }]);
   }
