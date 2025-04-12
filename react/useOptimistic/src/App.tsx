@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="sensorario-container light">
       <h1>useOptimistic()</h1>
-      <Library books={books} sendBook={sendBook} />;
+      <Library books={books} sendBook={sendBook} />
     </div>
   )
 }
