@@ -1,13 +1,11 @@
-import Componente from "./components";
 import "sensorario-design-system/style/index.css";
 
 function App() {
   return (
-    <div className="sensorario-container">
+    <div className="sensorario-container light">
       <h1>useActionState()</h1>
-      <Componente />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
