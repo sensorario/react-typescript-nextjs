@@ -6,17 +6,29 @@ type CheckBoxesProps = {
     setSwitches: (items: SwitchState[]) => void
 }
 
-export const CheckBoxes = ({ switches, setSwitches }: CheckBoxesProps) => {
-    const clickCheckboxHandler = (event: React.ChangeEvent<HTMLInputElement>, name: string) => {
-        let nameToBeRemoved: string = '';
+export const CheckBoxes = (
+    { switches: items, setSwitches }: CheckBoxesProps
+) => {
+    const handler = (
+        event: React.ChangeEvent<HTMLInputElement>,
+        name: string
+    ) => {
+        let removable: string = '';
 
-        if (switches.filter(item => item.checked).length > 1) {
-            nameToBeRemoved = switches.filter(item => item.checked)[Math.round(Math.random())].name;
+        if (items.filter(item => item.checked).length > 1) {
+            const index = Math.round(Math.random())
+            removable = items
+                .filter(item => item.checked)[index].name;
         }
 
-        const newState = switches.map((item: SwitchState) => {
+        const ret = items.map((item: SwitchState) => {
             if (item.name !== name) {
-                return nameToBeRemoved === item.name ? { ...item, checked: !event.target.checked } : item;
+                const val = {
+                    ...item,
+                    checked: !event.target.checked
+                }
+
+                return removable === item.name ? val : item;
             }
 
             return {
@@ -25,16 +37,18 @@ export const CheckBoxes = ({ switches, setSwitches }: CheckBoxesProps) => {
             };
         });
 
-        setSwitches(newState);
+        setSwitches(ret);
     };
 
-    return switches.map((item, key) => (
+    return items.map((item, key) => (
         <FormControlLabel
             key={key}
             control={
                 <Switch
                     checked={item.checked}
-                    onChange={(event) => clickCheckboxHandler(event, item.name)}
+                    onChange={
+                        (event) => handler(event, item.name)
+                    }
                 />
             }
             label={item.name}
