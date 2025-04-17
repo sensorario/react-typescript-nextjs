@@ -76,9 +76,8 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 
 ### Design System
 
-- [Design System] [icons](/design-system/icons)
-- [Design System] [griglia bottoni](/design-system/griglia-bottoni)
-- [Design System] [react icons](/design-system/react-icons)
+- [Design System] [icons](/design-system/example)
+- [Design System] [custom components](/design-system/custom-components)
 
 ### State Management
 
