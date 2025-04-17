@@ -1,4 +1,3 @@
-// @ts-expect-error the error will not appear after react 19 release
 import { useFormStatus } from "react-dom";
 
 const Componente = () => {
@@ -6,8 +5,8 @@ const Componente = () => {
   return <button type="submit">FORM IS {pending || "NOT"} PENDING</button>;
 };
 
-function pausa(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+function pausa(milliseconds: number) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
 const action = async () => {
