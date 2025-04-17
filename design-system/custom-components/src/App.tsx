@@ -8,7 +8,7 @@ function App() {
   const initialState: SwitchState[] = [
     { name: 'good', checked: false },
     { name: 'fast', checked: false },
-    { name: 'cheap', checked: false }
+    { name: 'cheap', checked: false },
   ];
 
   const [switches, setSwitches] = useState(initialState);
