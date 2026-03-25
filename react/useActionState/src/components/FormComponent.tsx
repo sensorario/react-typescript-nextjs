@@ -1,9 +1,8 @@
-"use server";
-
 import { useActionState } from "react";
+import Button from "sensorario-design-system/Button";
 
 async function handler(previousState: number, data: FormData) {
-    console.log({ data })
+    console.log({ data });
     return previousState + 1;
 }
 
@@ -23,8 +22,9 @@ export function FormComponent() {
             <div className="state">{state}</div>
             <div className="message">{message}</div>
             <form action={formActionHandler} method="post">
-                <button>Submit</button>
+                <Button type="submit">Submit</Button>
             </form>
         </>
     );
 }
+
