@@ -2,7 +2,7 @@
 
 In questo piccolo progetto puoi vedere un esempio di Redux.
 
-- [torna alla home](/)
+- [torna alla home](https://github.com/sensorario/react-typescript-nextjs/tree/next)
 
 ## Come fare...
 

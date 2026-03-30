@@ -2,7 +2,7 @@
 
 In questo piccolo progetto puoi vedere qualche esempio di styled component.
 
-- [torna alla home](/)
+- [torna alla home](https://github.com/sensorario/react-typescript-nextjs/tree/next)
 
 ## Come fare...
 
