@@ -1,6 +1,6 @@
 # useDeferredValue()
 
-- [torna alla home](../../../)
+- [torna alla home](/)
 
 ## Come fare...
 
