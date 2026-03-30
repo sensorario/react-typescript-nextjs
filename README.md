@@ -21,19 +21,20 @@ In questo repository puoi trovare buona parte del codice in cui si parla del lib
 
 #### Hooks
 
-- [React] [useContext()](/react/useContext)
-- [React] [useFormStatus()](/react/useFormStatus)
-- [React] [useTransition()](/react/useTransition)
-- [React] [useOptimistic()](/react/useOptimistic)
-- [React] [useActionState()](/react/useActionState)
-- [React] [useState()](/react/useState)
-- [React] [useReducer()](/react/useReducer)
-- [React] [useRef()](/react/useRef)
-- [React] [useEffect()](/react/useEffect)
-- [React] [useMemo()](/react/useMemo)
-- [React] [useCallback()](/react/useCallback)
-- [React] [useId()](/react/useId)
-- [React] [useSyncExternalStore()](/react/useSyncExternalStore)
+- [React] [useContext()](/react/hooks/useContext)
+- [React] [useFormStatus()](/react/hooks/useFormStatus)
+- [React] [useTransition()](/react/hooks/useTransition)
+- [React] [useOptimistic()](/react/hooks/useOptimistic)
+- [React] [useActionState()](/react/hooks/useActionState)
+- [React] [useState()](/react/hooks/useState)
+- [React] [useReducer()](/react/hooks/useReducer)
+- [React] [useRef()](/react/hooks/useRef)
+- [React] [useEffect()](/react/hooks/useEffect)
+- [React] [useMemo()](/react/hooks/useMemo)
+- [React] [useCallback()](/react/hooks/useCallback)
+- [React] [useId()](/react/hooks/useId)
+- [React] [useSyncExternalStore()](/react/hooks/useSyncExternalStore)
+- [React] [useDeferredValue()](/react/hooks/useDeferredValue)
 
 </td><td valign="baseline">
 
