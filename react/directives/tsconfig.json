@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "strict": false,
+    "noEmit": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "skipLibCheck":true,
+    "jsx": "react-jsx",
+    "module": "Node16",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "Node16",
+    "baseUrl": ".",
+    "types": ["react", "node"], // , "trusted-types", "jest-extended"],
+    "paths": {
+      "development-sandbox": ["test/lib/development-sandbox"],
+      "next-test-utils": ["test/lib/next-test-utils"],
+      "amp-test-utils": ["test/lib/amp-test-utils"],
+      "next-webdriver": ["test/lib/next-webdriver"],
+      "e2e-utils": ["test/lib/e2e-utils"],
+      "test-data-service/*": ["test/lib/test-data-service/*"],
+      "test-log": ["test/lib/test-log"]
+    }
+  }
+}
